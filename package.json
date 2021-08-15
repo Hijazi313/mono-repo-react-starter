@@ -1,9 +1,15 @@
 {
-    "private":"true",
-    "workspaces":["./core", "./main","./team-a", "./team-b"],
+    "private": "true",
+    "workspaces": [
+        "./core",
+        "./main",
+        "./team-a",
+        "./team-b"
+    ],
     "scripts": {
-        "start": "yarn workspace main start"
+        "start": "lerna run --scope=main start --stream"
+    },
+    "devDependencies": {
+        "lerna": "^4.0.0"
     }
-
-    
 }
